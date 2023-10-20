@@ -1,93 +1,106 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+         
+    <title>Login & Registration Form</title> 
 </head>
 <body>
-<div class="row">
-    <div class="col-75">
-      <div class="container">
-        <form action="">
-  
-          <div class="row">
-            <div class="col-50">
-              <h3>Платежный адрес</h3>
-              <label for="fname"><i class="fa fa-user"></i>Имя</label>
-              <input type="text" id="fname" name="firstname" placeholder="Щипунов Андрей Леонидович">
-              <input type="text" id="email" name="email" placeholder="and-shhipunov@mail.ru">
-              <label for="adr"><i class="fa fa-address-card-o"></i>Адрес</label>
-              <input type="text" id="adr" name="address" placeholder="Томская 44-39">
-              <label for="city"><i class="fa fa-institution"></i>Город</label>
-              <input type="text" id="city" name="city" placeholder="Пермь">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="state">Государство</label>
-                  <input type="text" id="state" name="state" placeholder="Россия">
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div> 
+
+                    <div class="input-field button">
+                        <form>
+                           <input type="button" value="Login" onClick="window.location='index.html'" />
+                        </form>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
                 </div>
-                <div class="col-50">
-                  <label for="zip">Zip</label>
-                  <input type="text" id="zip" name="zip" placeholder="10001">
-                </div>
-              </div>
             </div>
-  
-            <div class="col-50">
-              <h3>Платеж</h3>
-              <label for="fname">Допустимые карты</label>
-              <div class="icon-container">
-                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa fa-cc-discover" style="color:orange;"></i>
-              </div>
-              <label for="cname">Имя на карте</label>
-              <input type="text" id="cname" name="cardname" placeholder="Щипунов Андрей Леонидович">
-              <label for="ccnum">Номер кредитной карты</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-              <label for="expmonth">Годен месяц</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="Сентябрь">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Годен год</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2021">
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <form>
+                           <input type="button" value="Signup" onClick="window.location='index.html'" />
+                        </form>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
                 </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-              </div>
             </div>
-  
-          </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Адрес дставки совпадает с платежным адресом
-          </label>
-          <input type="submit" value="Продолжить оформление заказа" class="btn">
-        </form>
-      </div>
+        </div>
     </div>
-  
-    <div class="col-25">
-      <div class="container">
-        <h4>Корзина
-          <span class="price" style="color:black">
-            <i class="fa fa-shopping-cart"></i>
-            <b>4</b>
-          </span>
-        </h4>
-        <p><a href="#">Элемент 1</a> <span class="price">$15</span></p>
-        <p><a href="#">Элемент 2</a> <span class="price">$5</span></p>
-        <p><a href="#">Элемент 3</a> <span class="price">$8</span></p>
-        <p><a href="#">Элемент 4</a> <span class="price">$2</span></p>
-        <hr>
-        <p>Всего <span class="price" style="color:black"><b>$30</b></span></p>
-      </div>
-    </div>
-  </div>
+
+     <script src="script.js"></script> 
 </body>
 </html>
